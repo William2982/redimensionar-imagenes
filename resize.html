@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redimensionar Imagen</title>
+    <!-- HTML2Canvas -->
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
+    <link rel="shortcut icon" href="assets/logo_redimensionar.webp" type="image/x-icon">
+    <link rel="stylesheet" href="css/resize.css">
+    <script src="js/resize.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <div class="logo">
+                    <a href="/">
+                        <img src="assets/logo_redimensionar.webp" alt=" ">
+                    </a>
+                </div>
+                <h2 class="title">Redimensionar</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="text_position.html">Posicionar Texto</a></li>
+                <li><a href="resize.html">Redimensionar</a></li>
+                <li><a href="quality.html">Mejorar Calidad</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="inputs-container">
+            <div class="aspecto-container">
+                <h3>Aspecto de Imagen</h3>
+                <label for="ancho-input">Ancho (px):</label>
+                <input type="number" id="ancho-input" value="300">
+                <br>
+                <label for="alto-input">Alto (px):</label>
+                <input type="number" id="alto-input" value="300">
+                <br>
+                <label for="calidad-input">Calidad de Imagen:</label>
+                <input type="number" id="calidad-input" placeholder="1.00 - 9.00" value="3.00">
+                <br>
+                <label for="file-input">Selecciona una imagen:</label>
+                <input type="file" id="file-input" accept="image/*">
+            </div>
+        </div>
+        <div class="download-container">
+            <button id="download-btn" class="btn">Descargar Imagen</button>
+        </div>
+    </section>
+
+    <main>
+        <label for="file-input">
+            <div id="content">
+                <!-- Script -->
+            </div>
+        </label>
+    </main>
+
+    <footer>
+        <p> <!-- Script --> </p>
+    </footer>
+</body>
+
+</html>

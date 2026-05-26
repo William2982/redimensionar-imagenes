@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Error 404 - Página no encontrada</title>
+
+  <link rel="shortcut icon" href="assets/logo_redimensionar.webp" type="image/x-icon">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/404.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo-container">
+        <div class="logo">
+          <a href="/">
+            <img src="assets/logo_redimensionar.webp" alt="Logo">
+          </a>
+        </div>
+        <h2 class="title">Redimensionador de Imágenes</h2>
+      </div>
+    </nav>
+  </header>
+
+  <main class="not-found-container">
+    <div class="not-found-card">
+
+      <img src="assets/logo_redimensionar.webp" alt="Logo" class="error-logo">
+
+      <h1>404</h1>
+
+      <h2>Página no encontrada</h2>
+
+      <p>
+        Lo sentimos, la página que intentas visitar no existe,
+        fue movida o la dirección es incorrecta.
+      </p>
+
+      <div class="actions">
+        <a href="/">
+          <button class="btn">
+            Volver al Inicio
+          </button>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p> <!-- Script --> </p>
+  </footer>
+
+  <script>
+    const year = new Date().getFullYear();
+    document.querySelector('footer p').innerHTML = `&copy; ${year} William Sosa. Todos los derechos reservados.`;
+  </script>
+</body>
+
+</html>
